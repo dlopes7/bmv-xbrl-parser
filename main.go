@@ -20,8 +20,8 @@ func main() {
 	if err := json.Unmarshal(contents, &processed); err != nil {
 		panic(err)
 	}
-	for _, context := range processed.Contexts {
-		fmt.Println(context.Period.Duration())
+	for _, fact := range processed.Facts {
+		fmt.Println(fact.ConceptName, fact.Type, fact.NumericValue, fact.Numerator, fact.Denominator, fact.Decimals)
 	}
 
 }
