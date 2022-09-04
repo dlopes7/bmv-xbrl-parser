@@ -1,4 +1,4 @@
-package pkg
+package xbrl
 
 import "time"
 

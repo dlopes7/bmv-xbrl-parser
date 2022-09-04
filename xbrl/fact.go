@@ -1,4 +1,4 @@
-package pkg
+package xbrl
 
 type Fact struct {
 	ID           string   `json:"Id"`
@@ -9,7 +9,7 @@ type Fact struct {
 	Decimals     string   `json:"Decimales"`
 	Type         int      `json:"Tipo"`
 	Value        string   `json:"Valor"`
-	NumericValue int      `json:"ValorNumerico"`
+	NumericValue float64  `json:"ValorNumerico"`
 	Denominator  *float64 `json:"ValorDenominador"`
 	Numerator    *float64 `json:"ValorNumerador"`
 }

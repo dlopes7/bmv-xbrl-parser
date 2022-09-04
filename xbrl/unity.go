@@ -1,4 +1,4 @@
-package pkg
+package xbrl
 
 type Unit struct {
 	ID           string         `json:"Id"`
